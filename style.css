@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a0c1c;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.box {
+  background-color: #1b1937;
+  width: 327px;
+  border-radius: 8px;
+}
+.mobile {
+  border-radius: 8px 8px 0px 0px;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+.content {
+  width: 100%;
+  padding: 31px;
+}
+
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+}
+span {
+  color: #ab5cdb;
+}
+.long {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-top: 16px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.companies {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  margin-top: 40px;
+}
+.large {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.small {
+  font-family: "Lexend Deca", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  color: #ffffff;
+}
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    width: 50%;
+    background: url(Image.png);
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+  }
+  .box {
+    display: flex;
+    width: 1110px;
+  }
+  .flex {
+    flex-direction: row;
+    margin-top: 72px;
+  }
+  h1 {
+    margin-left: 72px;
+    margin-top: 71px;
+    font-size: 36px;
+    line-height: 44px;
+    width: 403px;
+  }
+  .long {
+    margin-left: 71.5px;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    
+    width: 374px;
+  }
+  .companies{
+    margin-top: -5px;
+    margin-left: 25px;
+  }
+}
